@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <p>input 1st integer</p>
+        <input type="text" id="fnum"><br>
+        <p>input 2nd integer</p>
+        <input type="text" id="snum">
+        <input type="button" onClick="forNearest()" value="Done">
+        <p id="nearest"></p>
+
+    </form>
+    <script>
+        function forNearest(){
+            firstNum = parseInt.getElementById("fnum").value;
+            secondNum = parseInt.getElementById("snum").value;
+
+
+            x=firstNum;
+            y=secondNum;
+            var mid=20;
+            var fnumDiff = mid - firstNum;
+            var snumDiff = secondNum - mid;
+
+            if(fnumDiff==snumDiff){
+                return 0;
+            }else if(fnumDiff > snumDiff){
+                return firstNum;
+            }else if(snumDiff >fnumDiff ){
+                return secondNum
+            }
+            
+            document.getElementById("nearest").innerHTML = "forNearest(firstNum,secondNum)";
+
+        }lol grave ang poji ko naman
+       
+
+
+    </script>
+
+</body>
+</html>

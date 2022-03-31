@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>please input a char</p>
+        <input type="text" id="character">
+        <input type="button" onClick="forConverting()" value="Submit">
+    
+        <p id = "Converting"></p>
+    </form>
+
+<script>
+      function forConverting(){
+        convChar = document.getElementById("character").value;
+        c = convChar.toUpperCase();
+        
+        char(c);
+    }
+
+    function char(fConv){
+        document.getElementById("Converting").innerHTML=fConv;
+
+    }
+
+</script>
+  
+
+
+</body>
+</html>
